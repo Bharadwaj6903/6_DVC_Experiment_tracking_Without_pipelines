@@ -1,0 +1,23 @@
+Experiment tracking : Recording the details(datasets,codeversions , metrics,artifacts,environment,hyperparameters) of experiments 
+
+pip install dvclive
+
+git init 
+dvc init
+dvc add data/student_performance.csv
+git add . 
+git commit -m 
+git remote add origin https://github.com/Bharadwaj6903/6_DVC_Experiment_tracking_Without_pipelines.git
+git push origin main 
+
+python src/model_training.py
+
+Observe dvc.yaml gets created , changes in .dvc/cache ,dvclive folder gets created 
+
+
+dvc exp show //lists down the experiments 
+
+Change few hyperparameters
+python src/model_training.py
+
+
